@@ -1,4 +1,4 @@
-The XMLMate Plug-In adds an XML parsing palette to the popular TextMate text editor for Mac OS X. While editing an XML (or XHTML) document in TextMate, you can open the XMLMate palette to conveniently check your document for well-formedness or validity against a DTD, W3C XML Schema, RELAX NG schema, or Schematron schema. Here's how:
+The XMLMate Plug-In adds an XML validation and XPath visualization palette to the popular TextMate text editor for Mac OS X. While editing an XML (or XHTML) document in TextMate, you can open the XMLMate palette to conveniently check your document for well-formedness or validity against a DTD, W3C XML Schema, RELAX NG schema, or Schematron schema. Here's how:
 
 1. Install XMLMate Plug-In.
 2. Begin editing an XML document in TextMate (XMLMate will always try to parse your frontmost TextMate document).
