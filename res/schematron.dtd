@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ENTITY % URI  "CDATA" >
+      <!ENTITY % PATTERN "CDATA" >
+      <!ENTITY % EXPR "CDATA" >
+      <!ENTITY % FPI  "CDATA" >
+      <!-- Element declarations -->
+       <!ELEMENT sch:schema  ( sch:title?, sch:ns*, sch:phase*, sch:p*, sch:pattern+ , sch:p*, sch:diagnostics? )>
+       <!ELEMENT sch:active   ( #PCDATA | sch:dir | sch:emph | sch:span)* >
+       <!ELEMENT sch:assert  ( #PCDATA | sch:name | sch:emph | sch:dir | sch:span )*>
+       <!ELEMENT sch:dir     ( #PCDATA )>
+       <!ELEMENT sch:emph    ( #PCDATA )>
+       <!ELEMENT sch:extends EMPTY >
+       <!ELEMENT sch:diagnostic    (#PCDATA | sch:value-of | sch:emph | sch:dir | sch:span)* >
+       <!ELEMENT sch:diagnostics   ( sch:diagnostic* )>
+       <!ELEMENT sch:key     EMPTY >
+       <!ELEMENT sch:name    EMPTY >
+       <!ELEMENT sch:ns      EMPTY >
+       <!ELEMENT sch:p       ( #PCDATA | sch:dir | sch:emph | sch:span)* >
+       <!ELEMENT sch:pattern ( sch:p*, sch:rule+ )>
+       <!ELEMENT sch:phase   ( sch:active )* >
+       <!ELEMENT sch:report  ( #PCDATA | sch:name | sch:emph | sch:dir  | sch:span)*>
+       <!ELEMENT sch:rule    ( sch:assert | sch:report | sch:key | sch:extends )+>
+       <!ELEMENT sch:span    ( #PCDATA )>
+       <!ELEMENT sch:title   ( #PCDATA | sch:dir )* >
+       <!ELEMENT sch:value-of EMPTY >
+<!-- Attribute declarations -->
+       <!ATTLIST sch:schema  xmlns:sch %URI; #FIXED "http://www.ascc.net/xml/schematron"
+                             id      ID #IMPLIED
+                             fpi     %FPI; #IMPLIED
+                             defaultPhase IDREF #IMPLIED
+                             icon    %URI; #IMPLIED
+                             version CDATA "1.5"
+                             xml:lang NMTOKEN #IMPLIED >
+
+       <!ATTLIST sch:active  pattern ID #REQUIRED >
+       <!ATTLIST sch:assert  test    %EXPR; #REQUIRED
+                             role    NMTOKEN    #IMPLIED
+                             id      ID  #IMPLIED 
+                             diagnostics   IDREFS #IMPLIED
+                             icon    %URI; #IMPLIED
+                             subject %PATTERN; #IMPLIED 
+                             xml:lang NMTOKEN #IMPLIED >
+       <!ATTLIST sch:dir     value ( ltr | rtl ) #IMPLIED >
+       <!ATTLIST sch:extends rule IDREF #REQUIRED >
+       <!ATTLIST sch:diagnostic    id      ID    #REQUIRED
+                             icon   %URI;  #IMPLIED
+                             xml:lang NMTOKEN #IMPLIED >
+       <!ATTLIST sch:key     name    NMTOKEN #REQUIRED
+                             path    %PATTERN; #REQUIRED 
+                             icon    %URI;  #IMPLIED >
+       <!ATTLIST sch:name    path    %PATTERN; #IMPLIED >
+               <!-- Schematrons should implement '.' 
+               as the default value for path -->
+       <!ATTLIST sch:p       xml:lang CDATA #IMPLIED 
+                             id      ID  #IMPLIED 
+                             class CDATA #IMPLIED 
+                             icon    %URI;  #IMPLIED >
+       <!ATTLIST sch:pattern name    CDATA #REQUIRED
+                             see     %URI; #IMPLIED
+                             id      ID    #IMPLIED 
+                             icon    %URI; #IMPLIED>
+       <!ATTLIST sch:ns      uri     %URI; #REQUIRED 
+                             prefix  NMTOKEN #IMPLIED >
+       <!ATTLIST sch:phase   id      ID    #REQUIRED
+                             fpi     %FPI; #IMPLIED
+                             icon    %URI; #IMPLIED >
+       <!ATTLIST sch:span    class CDATA #IMPLIED >
+       <!ATTLIST sch:report  test    %EXPR; #REQUIRED
+                             role    NMTOKEN   #IMPLIED
+                             id        ID             #IMPLIED 
+                             diagnostics    IDREFS    #IMPLIED
+                             icon    %URI; #IMPLIED
+                             subject %PATTERN; #IMPLIED >
+       <!ATTLIST sch:rule    context %PATTERN; #IMPLIED
+                             abstract  (true | false) "false"
+                             role    NMTOKEN    #IMPLIED 
+                             id        ID  #IMPLIED >
+                  <!-- Schematrons should implement 'no' as the default
+                  value of abstract -->
+       <!ATTLIST sch:value-of  select %PATTERN; #REQUIRED >

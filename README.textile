@@ -1,0 +1,18 @@
+The XMLMate Plug-In adds an XML parsing palette to the popular TextMate text editor for Mac OS X. While editing an XML (or XHTML) document in TextMate, you can open the XMLMate palette to conveniently check your document for well-formedness or validity against a DTD, W3C XML Schema, RELAX NG schema, or Schematron schema. Here's how:
+
+1. Install XMLMate Plug-In.
+2. Begin editing an XML document in TextMate (XMLMate will always try to parse your frontmost TextMate document).
+3. From the Window menu, select Show XMLMate palette.
+4. In the XMLMate palette, you can select your Validation options. Select None to just parse your XML document and check it for well-formedness. If you would like to validate your document, first select your preferred schema language.
+5. Then, select your schema document by clicking Browse and selecting from the filesystem. Alternatively, if you'd just like to validate your document against a DTD referenced from your source document's doctype, select DTD and leave the text field blank.
+6. Select other XML parser options by expanding the Settings disclosure triangle.
+7. Click the Parse button.
+
+The top half of the split view will show the results the parsing/validation. Selecting the Verbose checkbox will show more detailed information here.
+
+The bottom half of the split view will show the text representation of the XML parser's output (including defaulted DTD attributes, entity expansions, CDATA merges, etc. according to your parse settings -- this is sometimes helpful for debugging as you can see what the XML parser 'sees'.)
+
+XML Error messages appear in red and warnings appear in yellow. Clicking on either of this will open the offending document (source or schema) in TextMate with the problematic text selected.
+11/01/07 - Version 1.4.2: works with TextMate 1.5.7. If you are using TextMate version 1.5.7 or later, you will need XMLMate 1.4.2 or later. Earlier versions of XMLMate will not work with TextMate 1.5.7 or later. I've also added a user default for making the XMLMate panel a non-floating window:
+
+defaults write com.macromates.TextMate XMLMateFloatingPanel -bool NO

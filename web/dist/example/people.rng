@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+	<element name="people">
+		<oneOrMore>
+			<element name="person">
+				<element name="firstName"><text/></element>
+				<element name="lastName"><text/></element>
+			</element>
+		</oneOrMore>
+		<attribute name="lang"><text/></attribute>
+	</element>
+  </start>
+</grammar>

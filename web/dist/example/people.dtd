@@ -1,0 +1,7 @@
+<!ELEMENT people (person+)>
+<!ATTLIST people
+	lang CDATA "en">
+<!ELEMENT person (firstName, lastName)>
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+<!ENTITY venus "Venus">

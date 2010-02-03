@@ -1,0 +1,810 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		D3066D9C0CDA268E00D3EB73 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3066D9B0CDA268E00D3EB73 /* libxml2.dylib */; };
+		D31479FF0BD985BD00DDC923 /* XPathResultTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = D31479FD0BD985BD00DDC923 /* XPathResultTextView.m */; };
+		D327E8F60BA9B64C00A80E45 /* NSXMLDocument+SyntaxHightlite.m in Sources */ = {isa = PBXBuildFile; fileRef = D327E8F40BA9B64C00A80E45 /* NSXMLDocument+SyntaxHightlite.m */; };
+		D32D17190EEE25CA00416861 /* XMLMatePalette.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32D17170EEE25CA00416861 /* XMLMatePalette.xib */; };
+		D32D33E30CDB9EB800378D15 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32D33E20CDB9EB800378D15 /* Cocoa.framework */; };
+		D32D36620CDB9EC800378D15 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32D36610CDB9EC800378D15 /* WebKit.framework */; };
+		D32D387D0CDB9EDF00378D15 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32D387A0CDB9EDF00378D15 /* AppKit.framework */; };
+		D32D387E0CDB9EDF00378D15 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32D387B0CDB9EDF00378D15 /* CoreData.framework */; };
+		D32D387F0CDB9EDF00378D15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32D387C0CDB9EDF00378D15 /* Foundation.framework */; };
+		D35B38A40B4CA89300100F04 /* XPathServiceLibxmlImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = D35B38A20B4CA89200100F04 /* XPathServiceLibxmlImpl.m */; };
+		D35B39770B4CC39400100F04 /* XPathObjWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D35B39750B4CC39400100F04 /* XPathObjWrapper.m */; };
+		D3CEB77D0B48043E00771CFB /* XMLCatalogServiceLibxmlImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CEB77B0B48043E00771CFB /* XMLCatalogServiceLibxmlImpl.m */; };
+		D3CEB7F40B4809D700771CFB /* CatalogItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D3CEB7F20B4809D700771CFB /* CatalogItem.m */; };
+		D3CEBCF80B48B9CF00771CFB /* emptyCatalog.xml in Resources */ = {isa = PBXBuildFile; fileRef = D3CEBCF70B48B9CF00771CFB /* emptyCatalog.xml */; };
+		D3E5E7DF0B3D8A8B00C29ACF /* XMLMatePlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E5E7DE0B3D8A8B00C29ACF /* XMLMatePlugIn.m */; };
+		D3E5E87C0B3D935D00C29ACF /* XMLMateController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E5E87B0B3D935D00C29ACF /* XMLMateController.m */; };
+		D3E5E8D60B3D984400C29ACF /* BorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E5E8D50B3D984400C29ACF /* BorderView.m */; };
+		D3E5E9760B3D9FF300C29ACF /* XMLParseCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E5E9750B3D9FF300C29ACF /* XMLParseCommand.m */; };
+		D3E5E9C00B3DB38200C29ACF /* XMLParsingServiceLibxmlImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E5E9BF0B3DB38200C29ACF /* XMLParsingServiceLibxmlImpl.m */; };
+		D3E5E9DB0B3DB5B100C29ACF /* XMLParsingStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E5E9DA0B3DB5B100C29ACF /* XMLParsingStrategy.m */; };
+		D3E5E9F00B3DE17C00C29ACF /* XMLParsingUserSelectedDTDStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E5E9EF0B3DE17C00C29ACF /* XMLParsingUserSelectedDTDStrategy.m */; };
+		D3E5EA6A0B3DE39F00C29ACF /* NSString+libxml2Support.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E5EA690B3DE39F00C29ACF /* NSString+libxml2Support.m */; };
+		D3E5EBB80B3E17BB00C29ACF /* XMLParsingNoneStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3E5EBB70B3E17BB00C29ACF /* XMLParsingNoneStrategy.m */; };
+		D3E5EE5C0B3EE5FD00C29ACF /* results.html in Resources */ = {isa = PBXBuildFile; fileRef = D3E5EE5B0B3EE5FD00C29ACF /* results.html */; };
+		D3EE2E240B3F33A20064C73A /* XMLParsingAutoDTDStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EE2E230B3F33A20064C73A /* XMLParsingAutoDTDStrategy.m */; };
+		D3EE2FB40B3F520C0064C73A /* XMLParsingXSDStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EE2FB30B3F520C0064C73A /* XMLParsingXSDStrategy.m */; };
+		D3EE2FED0B3F56A30064C73A /* XMLParsingRNGStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EE2FEC0B3F56A30064C73A /* XMLParsingRNGStrategy.m */; };
+		D3EE2FF40B3F56D50064C73A /* XMLParsingRNCStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EE2FF30B3F56D50064C73A /* XMLParsingRNCStrategy.m */; };
+		D3EE2FF70B3F56E60064C73A /* XMLParsingSchematronStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EE2FF60B3F56E60064C73A /* XMLParsingSchematronStrategy.m */; };
+		D3EE32930B40A2B30064C73A /* error-icon-small.png in Copy Images */ = {isa = PBXBuildFile; fileRef = D3EE32900B40A2B30064C73A /* error-icon-small.png */; };
+		D3EE32940B40A2B40064C73A /* info-icon-small.png in Copy Images */ = {isa = PBXBuildFile; fileRef = D3EE32910B40A2B30064C73A /* info-icon-small.png */; };
+		D3EE32950B40A2B40064C73A /* warning-icon-small.png in Copy Images */ = {isa = PBXBuildFile; fileRef = D3EE32920B40A2B30064C73A /* warning-icon-small.png */; };
+		D3EE32C70B40A4520064C73A /* success-icon-small.png in Copy Images */ = {isa = PBXBuildFile; fileRef = D3EE32C60B40A4520064C73A /* success-icon-small.png */; };
+		D3EE3AC70B436D190064C73A /* AGRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = D3EE3AC50B436D190064C73A /* AGRegex.m */; };
+		D3EE3AD50B436D2D0064C73A /* chartables.c in Sources */ = {isa = PBXBuildFile; fileRef = D3EE3ACD0B436D2D0064C73A /* chartables.c */; };
+		D3EE3AD70B436D2D0064C73A /* get.c in Sources */ = {isa = PBXBuildFile; fileRef = D3EE3ACF0B436D2D0064C73A /* get.c */; };
+		D3EE3AD90B436D2D0064C73A /* maketables.c in Sources */ = {isa = PBXBuildFile; fileRef = D3EE3AD10B436D2D0064C73A /* maketables.c */; };
+		D3EE3ADA0B436D2D0064C73A /* pcre.c in Sources */ = {isa = PBXBuildFile; fileRef = D3EE3AD20B436D2D0064C73A /* pcre.c */; };
+		D3EE3ADC0B436D2D0064C73A /* study.c in Sources */ = {isa = PBXBuildFile; fileRef = D3EE3AD40B436D2D0064C73A /* study.c */; };
+		D3EE3AF10B436DE10064C73A /* sch-custom.xsl in Resources */ = {isa = PBXBuildFile; fileRef = D3EE3AEF0B436DE10064C73A /* sch-custom.xsl */; };
+		D3EE3AF20B436DE10064C73A /* skeleton-1.5.xsl in Resources */ = {isa = PBXBuildFile; fileRef = D3EE3AF00B436DE10064C73A /* skeleton-1.5.xsl */; };
+		D3EE3B4D0B4370F00064C73A /* libexslt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3EE3B4B0B4370F00064C73A /* libexslt.dylib */; };
+		D3EE3B4E0B4370F00064C73A /* libxslt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D3EE3B4C0B4370F00064C73A /* libxslt.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D3EE31810B3F7C720064C73A /* Copy Images */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = images;
+			dstSubfolderSpec = 7;
+			files = (
+				D3EE32C70B40A4520064C73A /* success-icon-small.png in Copy Images */,
+				D3EE32930B40A2B30064C73A /* error-icon-small.png in Copy Images */,
+				D3EE32940B40A2B40064C73A /* info-icon-small.png in Copy Images */,
+				D3EE32950B40A2B40064C73A /* warning-icon-small.png in Copy Images */,
+			);
+			name = "Copy Images";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		32DBCF630370AF2F00C91783 /* XMLMatePlugIn_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLMatePlugIn_Prefix.pch; sourceTree = "<group>"; };
+		8D5B49B6048680CD000E48DA /* XMLMate.tmplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XMLMate.tmplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3066D9B0CDA268E00D3EB73 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = /usr/lib/libxml2.dylib; sourceTree = "<absolute>"; };
+		D31479FC0BD985BD00DDC923 /* XPathResultTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XPathResultTextView.h; path = src/XPathResultTextView.h; sourceTree = "<group>"; };
+		D31479FD0BD985BD00DDC923 /* XPathResultTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XPathResultTextView.m; path = src/XPathResultTextView.m; sourceTree = "<group>"; };
+		D327E8F30BA9B64C00A80E45 /* NSXMLDocument+SyntaxHighlite.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = "NSXMLDocument+SyntaxHighlite.h"; path = "src/NSXMLDocument+SyntaxHighlite.h"; sourceTree = "<group>"; };
+		D327E8F40BA9B64C00A80E45 /* NSXMLDocument+SyntaxHightlite.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = "NSXMLDocument+SyntaxHightlite.m"; path = "src/NSXMLDocument+SyntaxHightlite.m"; sourceTree = "<group>"; };
+		D32D17180EEE25CA00416861 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/XMLMatePalette.xib; sourceTree = "<group>"; };
+		D32D33E20CDB9EB800378D15 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		D32D36610CDB9EC800378D15 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
+		D32D387A0CDB9EDF00378D15 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		D32D387B0CDB9EDF00378D15 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		D32D387C0CDB9EDF00378D15 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		D35B38A10B4CA89200100F04 /* XPathServiceLibxmlImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XPathServiceLibxmlImpl.h; path = src/XPathServiceLibxmlImpl.h; sourceTree = "<group>"; };
+		D35B38A20B4CA89200100F04 /* XPathServiceLibxmlImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XPathServiceLibxmlImpl.m; path = src/XPathServiceLibxmlImpl.m; sourceTree = "<group>"; };
+		D35B39740B4CC39400100F04 /* XPathObjWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XPathObjWrapper.h; path = src/XPathObjWrapper.h; sourceTree = "<group>"; };
+		D35B39750B4CC39400100F04 /* XPathObjWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XPathObjWrapper.m; path = src/XPathObjWrapper.m; sourceTree = "<group>"; };
+		D3A9E26A0B49636000601601 /* XPathService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XPathService.h; path = src/XPathService.h; sourceTree = "<group>"; };
+		D3CEB7740B48037B00771CFB /* XMLCatalogService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLCatalogService.h; path = src/XMLCatalogService.h; sourceTree = "<group>"; };
+		D3CEB77A0B48043E00771CFB /* XMLCatalogServiceLibxmlImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLCatalogServiceLibxmlImpl.h; path = src/XMLCatalogServiceLibxmlImpl.h; sourceTree = "<group>"; };
+		D3CEB77B0B48043E00771CFB /* XMLCatalogServiceLibxmlImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLCatalogServiceLibxmlImpl.m; path = src/XMLCatalogServiceLibxmlImpl.m; sourceTree = "<group>"; };
+		D3CEB7F10B4809D700771CFB /* CatalogItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CatalogItem.h; path = src/CatalogItem.h; sourceTree = "<group>"; };
+		D3CEB7F20B4809D700771CFB /* CatalogItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CatalogItem.m; path = src/CatalogItem.m; sourceTree = "<group>"; };
+		D3CEBCF70B48B9CF00771CFB /* emptyCatalog.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = emptyCatalog.xml; path = res/emptyCatalog.xml; sourceTree = "<group>"; };
+		D3E5E7DD0B3D8A8B00C29ACF /* XMLMatePlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLMatePlugIn.h; path = src/XMLMatePlugIn.h; sourceTree = "<group>"; };
+		D3E5E7DE0B3D8A8B00C29ACF /* XMLMatePlugIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLMatePlugIn.m; path = src/XMLMatePlugIn.m; sourceTree = "<group>"; };
+		D3E5E87A0B3D935D00C29ACF /* XMLMateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLMateController.h; path = src/XMLMateController.h; sourceTree = "<group>"; };
+		D3E5E87B0B3D935D00C29ACF /* XMLMateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLMateController.m; path = src/XMLMateController.m; sourceTree = "<group>"; };
+		D3E5E8D40B3D984400C29ACF /* BorderView.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = BorderView.h; path = src/BorderView.h; sourceTree = "<group>"; };
+		D3E5E8D50B3D984400C29ACF /* BorderView.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = BorderView.m; path = src/BorderView.m; sourceTree = "<group>"; };
+		D3E5E9740B3D9FF300C29ACF /* XMLParseCommand.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = XMLParseCommand.h; path = src/XMLParseCommand.h; sourceTree = "<group>"; };
+		D3E5E9750B3D9FF300C29ACF /* XMLParseCommand.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; name = XMLParseCommand.m; path = src/XMLParseCommand.m; sourceTree = "<group>"; };
+		D3E5E9770B3DA02600C29ACF /* XMLParsingService.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = XMLParsingService.h; path = src/XMLParsingService.h; sourceTree = "<group>"; };
+		D3E5E9BE0B3DB38200C29ACF /* XMLParsingServiceLibxmlImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLParsingServiceLibxmlImpl.h; path = src/XMLParsingServiceLibxmlImpl.h; sourceTree = "<group>"; };
+		D3E5E9BF0B3DB38200C29ACF /* XMLParsingServiceLibxmlImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLParsingServiceLibxmlImpl.m; path = src/XMLParsingServiceLibxmlImpl.m; sourceTree = "<group>"; };
+		D3E5E9D90B3DB5B100C29ACF /* XMLParsingStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLParsingStrategy.h; path = src/XMLParsingStrategy.h; sourceTree = "<group>"; };
+		D3E5E9DA0B3DB5B100C29ACF /* XMLParsingStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLParsingStrategy.m; path = src/XMLParsingStrategy.m; sourceTree = "<group>"; };
+		D3E5E9EE0B3DE17C00C29ACF /* XMLParsingUserSelectedDTDStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLParsingUserSelectedDTDStrategy.h; path = src/XMLParsingUserSelectedDTDStrategy.h; sourceTree = "<group>"; };
+		D3E5E9EF0B3DE17C00C29ACF /* XMLParsingUserSelectedDTDStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLParsingUserSelectedDTDStrategy.m; path = src/XMLParsingUserSelectedDTDStrategy.m; sourceTree = "<group>"; };
+		D3E5EA350B3DE2AE00C29ACF /* c14n.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = c14n.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/c14n.h; sourceTree = "<absolute>"; };
+		D3E5EA360B3DE2AE00C29ACF /* catalog.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = catalog.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/catalog.h; sourceTree = "<absolute>"; };
+		D3E5EA370B3DE2AE00C29ACF /* chvalid.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = chvalid.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/chvalid.h; sourceTree = "<absolute>"; };
+		D3E5EA380B3DE2AE00C29ACF /* debugXML.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = debugXML.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/debugXML.h; sourceTree = "<absolute>"; };
+		D3E5EA390B3DE2AE00C29ACF /* dict.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = dict.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/dict.h; sourceTree = "<absolute>"; };
+		D3E5EA3A0B3DE2AE00C29ACF /* DOCBparser.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = DOCBparser.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/DOCBparser.h; sourceTree = "<absolute>"; };
+		D3E5EA3B0B3DE2AE00C29ACF /* encoding.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = encoding.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/encoding.h; sourceTree = "<absolute>"; };
+		D3E5EA3C0B3DE2AE00C29ACF /* entities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = entities.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/entities.h; sourceTree = "<absolute>"; };
+		D3E5EA3D0B3DE2AE00C29ACF /* globals.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = globals.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/globals.h; sourceTree = "<absolute>"; };
+		D3E5EA3E0B3DE2AE00C29ACF /* hash.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = hash.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/hash.h; sourceTree = "<absolute>"; };
+		D3E5EA3F0B3DE2AE00C29ACF /* HTMLparser.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = HTMLparser.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/HTMLparser.h; sourceTree = "<absolute>"; };
+		D3E5EA400B3DE2AE00C29ACF /* HTMLtree.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = HTMLtree.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/HTMLtree.h; sourceTree = "<absolute>"; };
+		D3E5EA410B3DE2AE00C29ACF /* list.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = list.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/list.h; sourceTree = "<absolute>"; };
+		D3E5EA420B3DE2AE00C29ACF /* nanoftp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = nanoftp.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/nanoftp.h; sourceTree = "<absolute>"; };
+		D3E5EA430B3DE2AE00C29ACF /* nanohttp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = nanohttp.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/nanohttp.h; sourceTree = "<absolute>"; };
+		D3E5EA440B3DE2AE00C29ACF /* parser.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = parser.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/parser.h; sourceTree = "<absolute>"; };
+		D3E5EA450B3DE2AE00C29ACF /* parserInternals.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = parserInternals.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/parserInternals.h; sourceTree = "<absolute>"; };
+		D3E5EA460B3DE2AE00C29ACF /* pattern.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = pattern.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/pattern.h; sourceTree = "<absolute>"; };
+		D3E5EA470B3DE2AE00C29ACF /* relaxng.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = relaxng.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/relaxng.h; sourceTree = "<absolute>"; };
+		D3E5EA480B3DE2AE00C29ACF /* SAX.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SAX.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/SAX.h; sourceTree = "<absolute>"; };
+		D3E5EA490B3DE2AE00C29ACF /* SAX2.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SAX2.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/SAX2.h; sourceTree = "<absolute>"; };
+		D3E5EA4A0B3DE2AE00C29ACF /* schemasInternals.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = schemasInternals.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/schemasInternals.h; sourceTree = "<absolute>"; };
+		D3E5EA4B0B3DE2AE00C29ACF /* threads.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = threads.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/threads.h; sourceTree = "<absolute>"; };
+		D3E5EA4C0B3DE2AE00C29ACF /* tree.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tree.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/tree.h; sourceTree = "<absolute>"; };
+		D3E5EA4D0B3DE2AE00C29ACF /* uri.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = uri.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/uri.h; sourceTree = "<absolute>"; };
+		D3E5EA4E0B3DE2AE00C29ACF /* valid.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = valid.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/valid.h; sourceTree = "<absolute>"; };
+		D3E5EA4F0B3DE2AE00C29ACF /* xinclude.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xinclude.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xinclude.h; sourceTree = "<absolute>"; };
+		D3E5EA500B3DE2AE00C29ACF /* xlink.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xlink.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xlink.h; sourceTree = "<absolute>"; };
+		D3E5EA510B3DE2AE00C29ACF /* xmlautomata.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlautomata.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlautomata.h; sourceTree = "<absolute>"; };
+		D3E5EA520B3DE2AE00C29ACF /* xmlerror.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlerror.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlerror.h; sourceTree = "<absolute>"; };
+		D3E5EA530B3DE2AE00C29ACF /* xmlexports.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlexports.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlexports.h; sourceTree = "<absolute>"; };
+		D3E5EA540B3DE2AE00C29ACF /* xmlIO.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlIO.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlIO.h; sourceTree = "<absolute>"; };
+		D3E5EA550B3DE2AE00C29ACF /* xmlmemory.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlmemory.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlmemory.h; sourceTree = "<absolute>"; };
+		D3E5EA560B3DE2AE00C29ACF /* xmlreader.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlreader.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlreader.h; sourceTree = "<absolute>"; };
+		D3E5EA570B3DE2AE00C29ACF /* xmlregexp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlregexp.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlregexp.h; sourceTree = "<absolute>"; };
+		D3E5EA580B3DE2AE00C29ACF /* xmlsave.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlsave.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlsave.h; sourceTree = "<absolute>"; };
+		D3E5EA590B3DE2AE00C29ACF /* xmlschemas.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlschemas.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlschemas.h; sourceTree = "<absolute>"; };
+		D3E5EA5A0B3DE2AE00C29ACF /* xmlschemastypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlschemastypes.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlschemastypes.h; sourceTree = "<absolute>"; };
+		D3E5EA5B0B3DE2AE00C29ACF /* xmlstring.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlstring.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlstring.h; sourceTree = "<absolute>"; };
+		D3E5EA5C0B3DE2AE00C29ACF /* xmlunicode.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlunicode.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlunicode.h; sourceTree = "<absolute>"; };
+		D3E5EA5D0B3DE2AE00C29ACF /* xmlversion.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlversion.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlversion.h; sourceTree = "<absolute>"; };
+		D3E5EA5E0B3DE2AE00C29ACF /* xmlwriter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlwriter.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlwriter.h; sourceTree = "<absolute>"; };
+		D3E5EA5F0B3DE2AE00C29ACF /* xpath.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xpath.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xpath.h; sourceTree = "<absolute>"; };
+		D3E5EA600B3DE2AE00C29ACF /* xpathInternals.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xpathInternals.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xpathInternals.h; sourceTree = "<absolute>"; };
+		D3E5EA610B3DE2AE00C29ACF /* xpointer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xpointer.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xpointer.h; sourceTree = "<absolute>"; };
+		D3E5EA680B3DE39F00C29ACF /* NSString+libxml2Support.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+libxml2Support.h"; path = "src/NSString+libxml2Support.h"; sourceTree = "<group>"; };
+		D3E5EA690B3DE39F00C29ACF /* NSString+libxml2Support.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+libxml2Support.m"; path = "src/NSString+libxml2Support.m"; sourceTree = "<group>"; };
+		D3E5EBB60B3E17BB00C29ACF /* XMLParsingNoneStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLParsingNoneStrategy.h; path = src/XMLParsingNoneStrategy.h; sourceTree = "<group>"; };
+		D3E5EBB70B3E17BB00C29ACF /* XMLParsingNoneStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLParsingNoneStrategy.m; path = src/XMLParsingNoneStrategy.m; sourceTree = "<group>"; };
+		D3E5EE5B0B3EE5FD00C29ACF /* results.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = results.html; path = res/results.html; sourceTree = "<group>"; };
+		D3E5F1D30B3F062F00C29ACF /* attribute-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "attribute-icon.png"; sourceTree = "<group>"; };
+		D3E5F1D40B3F062F00C29ACF /* attribute-icon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "attribute-icon.psd"; sourceTree = "<group>"; };
+		D3E5F1D50B3F062F00C29ACF /* comment-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "comment-icon.png"; sourceTree = "<group>"; };
+		D3E5F1D60B3F062F00C29ACF /* comment-icon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "comment-icon.psd"; sourceTree = "<group>"; };
+		D3E5F1D70B3F062F00C29ACF /* element-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "element-icon.png"; sourceTree = "<group>"; };
+		D3E5F1D80B3F062F00C29ACF /* element-icon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "element-icon.psd"; sourceTree = "<group>"; };
+		D3E5F1D90B3F062F00C29ACF /* entity-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "entity-icon.png"; sourceTree = "<group>"; };
+		D3E5F1DA0B3F062F00C29ACF /* entity-icon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "entity-icon.psd"; sourceTree = "<group>"; };
+		D3E5F1DB0B3F062F00C29ACF /* error-icon-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "error-icon-128.png"; sourceTree = "<group>"; };
+		D3E5F1DC0B3F062F00C29ACF /* error-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "error-icon.png"; sourceTree = "<group>"; };
+		D3E5F1DD0B3F062F00C29ACF /* file.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = file.psd; sourceTree = "<group>"; };
+		D3E5F1DE0B3F062F00C29ACF /* generic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = generic.jpg; sourceTree = "<group>"; };
+		D3E5F1DF0B3F062F00C29ACF /* info-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info-icon.png"; sourceTree = "<group>"; };
+		D3E5F1E00B3F062F00C29ACF /* ns-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ns-icon.png"; sourceTree = "<group>"; };
+		D3E5F1E10B3F062F00C29ACF /* ns-icon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ns-icon.psd"; sourceTree = "<group>"; };
+		D3E5F1E20B3F062F00C29ACF /* pi-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pi-icon.png"; sourceTree = "<group>"; };
+		D3E5F1E30B3F062F00C29ACF /* pi-icon.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pi-icon.psd"; sourceTree = "<group>"; };
+		D3E5F1E40B3F062F00C29ACF /* scandalous_stationary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scandalous_stationary.png; sourceTree = "<group>"; };
+		D3E5F1E50B3F062F00C29ACF /* success-icon-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "success-icon-128.png"; sourceTree = "<group>"; };
+		D3E5F1E60B3F062F00C29ACF /* success-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "success-icon.png"; sourceTree = "<group>"; };
+		D3E5F1E70B3F062F00C29ACF /* warning-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warning-icon.png"; sourceTree = "<group>"; };
+		D3E5F1E80B3F062F00C29ACF /* xmlnanny_icon128.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = xmlnanny_icon128.psd; sourceTree = "<group>"; };
+		D3EE2E220B3F33A20064C73A /* XMLParsingAutoDTDStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLParsingAutoDTDStrategy.h; path = src/XMLParsingAutoDTDStrategy.h; sourceTree = "<group>"; };
+		D3EE2E230B3F33A20064C73A /* XMLParsingAutoDTDStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLParsingAutoDTDStrategy.m; path = src/XMLParsingAutoDTDStrategy.m; sourceTree = "<group>"; };
+		D3EE2FB20B3F520C0064C73A /* XMLParsingXSDStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLParsingXSDStrategy.h; path = src/XMLParsingXSDStrategy.h; sourceTree = "<group>"; };
+		D3EE2FB30B3F520C0064C73A /* XMLParsingXSDStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLParsingXSDStrategy.m; path = src/XMLParsingXSDStrategy.m; sourceTree = "<group>"; };
+		D3EE2FEB0B3F56A30064C73A /* XMLParsingRNGStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLParsingRNGStrategy.h; path = src/XMLParsingRNGStrategy.h; sourceTree = "<group>"; };
+		D3EE2FEC0B3F56A30064C73A /* XMLParsingRNGStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLParsingRNGStrategy.m; path = src/XMLParsingRNGStrategy.m; sourceTree = "<group>"; };
+		D3EE2FF20B3F56D50064C73A /* XMLParsingRNCStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLParsingRNCStrategy.h; path = src/XMLParsingRNCStrategy.h; sourceTree = "<group>"; };
+		D3EE2FF30B3F56D50064C73A /* XMLParsingRNCStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLParsingRNCStrategy.m; path = src/XMLParsingRNCStrategy.m; sourceTree = "<group>"; };
+		D3EE2FF50B3F56E60064C73A /* XMLParsingSchematronStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLParsingSchematronStrategy.h; path = src/XMLParsingSchematronStrategy.h; sourceTree = "<group>"; };
+		D3EE2FF60B3F56E60064C73A /* XMLParsingSchematronStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLParsingSchematronStrategy.m; path = src/XMLParsingSchematronStrategy.m; sourceTree = "<group>"; };
+		D3EE32900B40A2B30064C73A /* error-icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "error-icon-small.png"; sourceTree = "<group>"; };
+		D3EE32910B40A2B30064C73A /* info-icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info-icon-small.png"; sourceTree = "<group>"; };
+		D3EE32920B40A2B30064C73A /* warning-icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warning-icon-small.png"; sourceTree = "<group>"; };
+		D3EE32C60B40A4520064C73A /* success-icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "success-icon-small.png"; sourceTree = "<group>"; };
+		D3EE3AC40B436D190064C73A /* AGRegex.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = AGRegex.h; sourceTree = "<group>"; };
+		D3EE3AC50B436D190064C73A /* AGRegex.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = AGRegex.m; sourceTree = "<group>"; };
+		D3EE3ACD0B436D2D0064C73A /* chartables.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = chartables.c; sourceTree = "<group>"; };
+		D3EE3ACE0B436D2D0064C73A /* config.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		D3EE3ACF0B436D2D0064C73A /* get.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = get.c; sourceTree = "<group>"; };
+		D3EE3AD00B436D2D0064C73A /* internal.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = internal.h; sourceTree = "<group>"; };
+		D3EE3AD10B436D2D0064C73A /* maketables.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = maketables.c; sourceTree = "<group>"; };
+		D3EE3AD20B436D2D0064C73A /* pcre.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = pcre.c; sourceTree = "<group>"; };
+		D3EE3AD30B436D2D0064C73A /* pcre.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = pcre.h; sourceTree = "<group>"; };
+		D3EE3AD40B436D2D0064C73A /* study.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; path = study.c; sourceTree = "<group>"; };
+		D3EE3AEF0B436DE10064C73A /* sch-custom.xsl */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; name = "sch-custom.xsl"; path = "res/sch-custom.xsl"; sourceTree = "<group>"; };
+		D3EE3AF00B436DE10064C73A /* skeleton-1.5.xsl */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; name = "skeleton-1.5.xsl"; path = "res/skeleton-1.5.xsl"; sourceTree = "<group>"; };
+		D3EE3B4B0B4370F00064C73A /* libexslt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libexslt.dylib; path = /usr/lib/libexslt.dylib; sourceTree = "<absolute>"; };
+		D3EE3B4C0B4370F00064C73A /* libxslt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxslt.dylib; path = /usr/lib/libxslt.dylib; sourceTree = "<absolute>"; };
+		D3EE3BAD0B437C0F0064C73A /* attributes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = attributes.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/attributes.h; sourceTree = "<absolute>"; };
+		D3EE3BAE0B437C0F0064C73A /* documents.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = documents.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/documents.h; sourceTree = "<absolute>"; };
+		D3EE3BAF0B437C0F0064C73A /* extensions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = extensions.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/extensions.h; sourceTree = "<absolute>"; };
+		D3EE3BB00B437C0F0064C73A /* extra.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = extra.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/extra.h; sourceTree = "<absolute>"; };
+		D3EE3BB10B437C0F0064C73A /* functions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = functions.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/functions.h; sourceTree = "<absolute>"; };
+		D3EE3BB20B437C0F0064C73A /* imports.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = imports.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/imports.h; sourceTree = "<absolute>"; };
+		D3EE3BB30B437C0F0064C73A /* keys.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = keys.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/keys.h; sourceTree = "<absolute>"; };
+		D3EE3BB40B437C0F0064C73A /* namespaces.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = namespaces.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/namespaces.h; sourceTree = "<absolute>"; };
+		D3EE3BB50B437C0F0064C73A /* numbersInternals.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = numbersInternals.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/numbersInternals.h; sourceTree = "<absolute>"; };
+		D3EE3BB60B437C0F0064C73A /* pattern.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = pattern.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/pattern.h; sourceTree = "<absolute>"; };
+		D3EE3BB70B437C0F0064C73A /* preproc.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = preproc.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/preproc.h; sourceTree = "<absolute>"; };
+		D3EE3BB80B437C0F0064C73A /* security.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = security.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/security.h; sourceTree = "<absolute>"; };
+		D3EE3BB90B437C0F0064C73A /* templates.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = templates.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/templates.h; sourceTree = "<absolute>"; };
+		D3EE3BBA0B437C0F0064C73A /* transform.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = transform.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/transform.h; sourceTree = "<absolute>"; };
+		D3EE3BBB0B437C0F0064C73A /* variables.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = variables.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/variables.h; sourceTree = "<absolute>"; };
+		D3EE3BBC0B437C0F0064C73A /* xslt.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xslt.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/xslt.h; sourceTree = "<absolute>"; };
+		D3EE3BBD0B437C0F0064C73A /* xsltconfig.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xsltconfig.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/xsltconfig.h; sourceTree = "<absolute>"; };
+		D3EE3BBE0B437C0F0064C73A /* xsltexports.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xsltexports.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/xsltexports.h; sourceTree = "<absolute>"; };
+		D3EE3BBF0B437C0F0064C73A /* xsltInternals.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xsltInternals.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/xsltInternals.h; sourceTree = "<absolute>"; };
+		D3EE3BC00B437C0F0064C73A /* xsltutils.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xsltutils.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/xsltutils.h; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3EE3B4D0B4370F00064C73A /* libexslt.dylib in Frameworks */,
+				D3EE3B4E0B4370F00064C73A /* libxslt.dylib in Frameworks */,
+				D3066D9C0CDA268E00D3EB73 /* libxml2.dylib in Frameworks */,
+				D32D33E30CDB9EB800378D15 /* Cocoa.framework in Frameworks */,
+				D32D36620CDB9EC800378D15 /* WebKit.framework in Frameworks */,
+				D32D387D0CDB9EDF00378D15 /* AppKit.framework in Frameworks */,
+				D32D387E0CDB9EDF00378D15 /* CoreData.framework in Frameworks */,
+				D32D387F0CDB9EDF00378D15 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* TeXMLMatePlugIn */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				32C88E010371C26100C91783 /* Other Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = TeXMLMatePlugIn;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D32D17170EEE25CA00416861 /* XMLMatePalette.xib */,
+				D3CEBCF70B48B9CF00771CFB /* emptyCatalog.xml */,
+				D3EE3AEF0B436DE10064C73A /* sch-custom.xsl */,
+				D3EE3AF00B436DE10064C73A /* skeleton-1.5.xsl */,
+				D3E5F1D20B3F062F00C29ACF /* Images */,
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+				D3E5EE5B0B3EE5FD00C29ACF /* results.html */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D3EE3AC30B436D190064C73A /* AGRegex */,
+				D3E5E9F30B3DE19C00C29ACF /* App */,
+				D3A9E2690B49634A00601601 /* XPath */,
+				D3CEB7710B48034E00771CFB /* Catalog */,
+				D3E5E9F40B3DE1AC00C29ACF /* XMLParsing */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D32D36610CDB9EC800378D15 /* WebKit.framework */,
+				D32D33E20CDB9EB800378D15 /* Cocoa.framework */,
+				D3EE3B4B0B4370F00064C73A /* libexslt.dylib */,
+				D3EE3B4C0B4370F00064C73A /* libxslt.dylib */,
+				D3066D9B0CDA268E00D3EB73 /* libxml2.dylib */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D32D387A0CDB9EDF00378D15 /* AppKit.framework */,
+				D32D387B0CDB9EDF00378D15 /* CoreData.framework */,
+				D32D387C0CDB9EDF00378D15 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* XMLMate.tmplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32C88E010371C26100C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D3EE3ACC0B436D2D0064C73A /* pcre-4.3 */,
+				D3E5EA340B3DE2AE00C29ACF /* libxml */,
+				D3EE3BAC0B437C0F0064C73A /* libxslt */,
+				32DBCF630370AF2F00C91783 /* XMLMatePlugIn_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		D326535B0B5018A800294354 /* Syntax Highlite */ = {
+			isa = PBXGroup;
+			children = (
+				D327E8F30BA9B64C00A80E45 /* NSXMLDocument+SyntaxHighlite.h */,
+				D327E8F40BA9B64C00A80E45 /* NSXMLDocument+SyntaxHightlite.m */,
+			);
+			name = "Syntax Highlite";
+			sourceTree = "<group>";
+		};
+		D3A9E2690B49634A00601601 /* XPath */ = {
+			isa = PBXGroup;
+			children = (
+				D326535B0B5018A800294354 /* Syntax Highlite */,
+				D3A9E26A0B49636000601601 /* XPathService.h */,
+				D35B38A10B4CA89200100F04 /* XPathServiceLibxmlImpl.h */,
+				D35B38A20B4CA89200100F04 /* XPathServiceLibxmlImpl.m */,
+				D35B39740B4CC39400100F04 /* XPathObjWrapper.h */,
+				D35B39750B4CC39400100F04 /* XPathObjWrapper.m */,
+				D31479FC0BD985BD00DDC923 /* XPathResultTextView.h */,
+				D31479FD0BD985BD00DDC923 /* XPathResultTextView.m */,
+			);
+			name = XPath;
+			sourceTree = "<group>";
+		};
+		D3CEB7710B48034E00771CFB /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				D3CEB7740B48037B00771CFB /* XMLCatalogService.h */,
+				D3CEB77A0B48043E00771CFB /* XMLCatalogServiceLibxmlImpl.h */,
+				D3CEB77B0B48043E00771CFB /* XMLCatalogServiceLibxmlImpl.m */,
+				D3CEB7F10B4809D700771CFB /* CatalogItem.h */,
+				D3CEB7F20B4809D700771CFB /* CatalogItem.m */,
+			);
+			name = Catalog;
+			sourceTree = "<group>";
+		};
+		D3E5E9F30B3DE19C00C29ACF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D3E5E7DD0B3D8A8B00C29ACF /* XMLMatePlugIn.h */,
+				D3E5E7DE0B3D8A8B00C29ACF /* XMLMatePlugIn.m */,
+				D3E5E87A0B3D935D00C29ACF /* XMLMateController.h */,
+				D3E5E87B0B3D935D00C29ACF /* XMLMateController.m */,
+				D3E5E8D40B3D984400C29ACF /* BorderView.h */,
+				D3E5E8D50B3D984400C29ACF /* BorderView.m */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		D3E5E9F40B3DE1AC00C29ACF /* XMLParsing */ = {
+			isa = PBXGroup;
+			children = (
+				D3E5EA680B3DE39F00C29ACF /* NSString+libxml2Support.h */,
+				D3E5EA690B3DE39F00C29ACF /* NSString+libxml2Support.m */,
+				D3E5E9740B3D9FF300C29ACF /* XMLParseCommand.h */,
+				D3E5E9750B3D9FF300C29ACF /* XMLParseCommand.m */,
+				D3E5E9770B3DA02600C29ACF /* XMLParsingService.h */,
+				D3E5E9BE0B3DB38200C29ACF /* XMLParsingServiceLibxmlImpl.h */,
+				D3E5E9BF0B3DB38200C29ACF /* XMLParsingServiceLibxmlImpl.m */,
+				D3EE30000B3F575C0064C73A /* Strategies */,
+			);
+			name = XMLParsing;
+			sourceTree = "<group>";
+		};
+		D3E5EA340B3DE2AE00C29ACF /* libxml */ = {
+			isa = PBXGroup;
+			children = (
+				D3E5EA350B3DE2AE00C29ACF /* c14n.h */,
+				D3E5EA360B3DE2AE00C29ACF /* catalog.h */,
+				D3E5EA370B3DE2AE00C29ACF /* chvalid.h */,
+				D3E5EA380B3DE2AE00C29ACF /* debugXML.h */,
+				D3E5EA390B3DE2AE00C29ACF /* dict.h */,
+				D3E5EA3A0B3DE2AE00C29ACF /* DOCBparser.h */,
+				D3E5EA3B0B3DE2AE00C29ACF /* encoding.h */,
+				D3E5EA3C0B3DE2AE00C29ACF /* entities.h */,
+				D3E5EA3D0B3DE2AE00C29ACF /* globals.h */,
+				D3E5EA3E0B3DE2AE00C29ACF /* hash.h */,
+				D3E5EA3F0B3DE2AE00C29ACF /* HTMLparser.h */,
+				D3E5EA400B3DE2AE00C29ACF /* HTMLtree.h */,
+				D3E5EA410B3DE2AE00C29ACF /* list.h */,
+				D3E5EA420B3DE2AE00C29ACF /* nanoftp.h */,
+				D3E5EA430B3DE2AE00C29ACF /* nanohttp.h */,
+				D3E5EA440B3DE2AE00C29ACF /* parser.h */,
+				D3E5EA450B3DE2AE00C29ACF /* parserInternals.h */,
+				D3E5EA460B3DE2AE00C29ACF /* pattern.h */,
+				D3E5EA470B3DE2AE00C29ACF /* relaxng.h */,
+				D3E5EA480B3DE2AE00C29ACF /* SAX.h */,
+				D3E5EA490B3DE2AE00C29ACF /* SAX2.h */,
+				D3E5EA4A0B3DE2AE00C29ACF /* schemasInternals.h */,
+				D3E5EA4B0B3DE2AE00C29ACF /* threads.h */,
+				D3E5EA4C0B3DE2AE00C29ACF /* tree.h */,
+				D3E5EA4D0B3DE2AE00C29ACF /* uri.h */,
+				D3E5EA4E0B3DE2AE00C29ACF /* valid.h */,
+				D3E5EA4F0B3DE2AE00C29ACF /* xinclude.h */,
+				D3E5EA500B3DE2AE00C29ACF /* xlink.h */,
+				D3E5EA510B3DE2AE00C29ACF /* xmlautomata.h */,
+				D3E5EA520B3DE2AE00C29ACF /* xmlerror.h */,
+				D3E5EA530B3DE2AE00C29ACF /* xmlexports.h */,
+				D3E5EA540B3DE2AE00C29ACF /* xmlIO.h */,
+				D3E5EA550B3DE2AE00C29ACF /* xmlmemory.h */,
+				D3E5EA560B3DE2AE00C29ACF /* xmlreader.h */,
+				D3E5EA570B3DE2AE00C29ACF /* xmlregexp.h */,
+				D3E5EA580B3DE2AE00C29ACF /* xmlsave.h */,
+				D3E5EA590B3DE2AE00C29ACF /* xmlschemas.h */,
+				D3E5EA5A0B3DE2AE00C29ACF /* xmlschemastypes.h */,
+				D3E5EA5B0B3DE2AE00C29ACF /* xmlstring.h */,
+				D3E5EA5C0B3DE2AE00C29ACF /* xmlunicode.h */,
+				D3E5EA5D0B3DE2AE00C29ACF /* xmlversion.h */,
+				D3E5EA5E0B3DE2AE00C29ACF /* xmlwriter.h */,
+				D3E5EA5F0B3DE2AE00C29ACF /* xpath.h */,
+				D3E5EA600B3DE2AE00C29ACF /* xpathInternals.h */,
+				D3E5EA610B3DE2AE00C29ACF /* xpointer.h */,
+			);
+			name = libxml;
+			path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml;
+			sourceTree = "<absolute>";
+		};
+		D3E5F1D20B3F062F00C29ACF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D3EE32C60B40A4520064C73A /* success-icon-small.png */,
+				D3EE32900B40A2B30064C73A /* error-icon-small.png */,
+				D3EE32910B40A2B30064C73A /* info-icon-small.png */,
+				D3EE32920B40A2B30064C73A /* warning-icon-small.png */,
+				D3E5F1D30B3F062F00C29ACF /* attribute-icon.png */,
+				D3E5F1D40B3F062F00C29ACF /* attribute-icon.psd */,
+				D3E5F1D50B3F062F00C29ACF /* comment-icon.png */,
+				D3E5F1D60B3F062F00C29ACF /* comment-icon.psd */,
+				D3E5F1D70B3F062F00C29ACF /* element-icon.png */,
+				D3E5F1D80B3F062F00C29ACF /* element-icon.psd */,
+				D3E5F1D90B3F062F00C29ACF /* entity-icon.png */,
+				D3E5F1DA0B3F062F00C29ACF /* entity-icon.psd */,
+				D3E5F1DB0B3F062F00C29ACF /* error-icon-128.png */,
+				D3E5F1DC0B3F062F00C29ACF /* error-icon.png */,
+				D3E5F1DD0B3F062F00C29ACF /* file.psd */,
+				D3E5F1DE0B3F062F00C29ACF /* generic.jpg */,
+				D3E5F1DF0B3F062F00C29ACF /* info-icon.png */,
+				D3E5F1E00B3F062F00C29ACF /* ns-icon.png */,
+				D3E5F1E10B3F062F00C29ACF /* ns-icon.psd */,
+				D3E5F1E20B3F062F00C29ACF /* pi-icon.png */,
+				D3E5F1E30B3F062F00C29ACF /* pi-icon.psd */,
+				D3E5F1E40B3F062F00C29ACF /* scandalous_stationary.png */,
+				D3E5F1E50B3F062F00C29ACF /* success-icon-128.png */,
+				D3E5F1E60B3F062F00C29ACF /* success-icon.png */,
+				D3E5F1E70B3F062F00C29ACF /* warning-icon.png */,
+				D3E5F1E80B3F062F00C29ACF /* xmlnanny_icon128.psd */,
+			);
+			name = Images;
+			path = res/Images;
+			sourceTree = "<group>";
+		};
+		D3EE30000B3F575C0064C73A /* Strategies */ = {
+			isa = PBXGroup;
+			children = (
+				D3E5E9D90B3DB5B100C29ACF /* XMLParsingStrategy.h */,
+				D3E5E9DA0B3DB5B100C29ACF /* XMLParsingStrategy.m */,
+				D3E5EBB60B3E17BB00C29ACF /* XMLParsingNoneStrategy.h */,
+				D3E5EBB70B3E17BB00C29ACF /* XMLParsingNoneStrategy.m */,
+				D3EE2E220B3F33A20064C73A /* XMLParsingAutoDTDStrategy.h */,
+				D3EE2E230B3F33A20064C73A /* XMLParsingAutoDTDStrategy.m */,
+				D3E5E9EE0B3DE17C00C29ACF /* XMLParsingUserSelectedDTDStrategy.h */,
+				D3E5E9EF0B3DE17C00C29ACF /* XMLParsingUserSelectedDTDStrategy.m */,
+				D3EE2FB20B3F520C0064C73A /* XMLParsingXSDStrategy.h */,
+				D3EE2FB30B3F520C0064C73A /* XMLParsingXSDStrategy.m */,
+				D3EE2FEB0B3F56A30064C73A /* XMLParsingRNGStrategy.h */,
+				D3EE2FEC0B3F56A30064C73A /* XMLParsingRNGStrategy.m */,
+				D3EE2FF20B3F56D50064C73A /* XMLParsingRNCStrategy.h */,
+				D3EE2FF30B3F56D50064C73A /* XMLParsingRNCStrategy.m */,
+				D3EE2FF50B3F56E60064C73A /* XMLParsingSchematronStrategy.h */,
+				D3EE2FF60B3F56E60064C73A /* XMLParsingSchematronStrategy.m */,
+			);
+			name = Strategies;
+			sourceTree = "<group>";
+		};
+		D3EE3AC30B436D190064C73A /* AGRegex */ = {
+			isa = PBXGroup;
+			children = (
+				D3EE3AC40B436D190064C73A /* AGRegex.h */,
+				D3EE3AC50B436D190064C73A /* AGRegex.m */,
+			);
+			name = AGRegex;
+			path = src/AGRegex;
+			sourceTree = "<group>";
+		};
+		D3EE3ACC0B436D2D0064C73A /* pcre-4.3 */ = {
+			isa = PBXGroup;
+			children = (
+				D3EE3ACD0B436D2D0064C73A /* chartables.c */,
+				D3EE3ACE0B436D2D0064C73A /* config.h */,
+				D3EE3ACF0B436D2D0064C73A /* get.c */,
+				D3EE3AD00B436D2D0064C73A /* internal.h */,
+				D3EE3AD10B436D2D0064C73A /* maketables.c */,
+				D3EE3AD20B436D2D0064C73A /* pcre.c */,
+				D3EE3AD30B436D2D0064C73A /* pcre.h */,
+				D3EE3AD40B436D2D0064C73A /* study.c */,
+			);
+			name = "pcre-4.3";
+			path = "src/pcre-4.3";
+			sourceTree = "<group>";
+		};
+		D3EE3BAC0B437C0F0064C73A /* libxslt */ = {
+			isa = PBXGroup;
+			children = (
+				D3EE3BAD0B437C0F0064C73A /* attributes.h */,
+				D3EE3BAE0B437C0F0064C73A /* documents.h */,
+				D3EE3BAF0B437C0F0064C73A /* extensions.h */,
+				D3EE3BB00B437C0F0064C73A /* extra.h */,
+				D3EE3BB10B437C0F0064C73A /* functions.h */,
+				D3EE3BB20B437C0F0064C73A /* imports.h */,
+				D3EE3BB30B437C0F0064C73A /* keys.h */,
+				D3EE3BB40B437C0F0064C73A /* namespaces.h */,
+				D3EE3BB50B437C0F0064C73A /* numbersInternals.h */,
+				D3EE3BB60B437C0F0064C73A /* pattern.h */,
+				D3EE3BB70B437C0F0064C73A /* preproc.h */,
+				D3EE3BB80B437C0F0064C73A /* security.h */,
+				D3EE3BB90B437C0F0064C73A /* templates.h */,
+				D3EE3BBA0B437C0F0064C73A /* transform.h */,
+				D3EE3BBB0B437C0F0064C73A /* variables.h */,
+				D3EE3BBC0B437C0F0064C73A /* xslt.h */,
+				D3EE3BBD0B437C0F0064C73A /* xsltconfig.h */,
+				D3EE3BBE0B437C0F0064C73A /* xsltexports.h */,
+				D3EE3BBF0B437C0F0064C73A /* xsltInternals.h */,
+				D3EE3BC00B437C0F0064C73A /* xsltutils.h */,
+			);
+			name = libxslt;
+			path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt;
+			sourceTree = "<absolute>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5B49AC048680CD000E48DA /* XMLMatePlugIn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "XMLMatePlugIn" */;
+			buildPhases = (
+				8D5B49AF048680CD000E48DA /* Resources */,
+				D3EE31810B3F7C720064C73A /* Copy Images */,
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+				D3E5E8B10B3D95C500C29ACF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XMLMatePlugIn;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = TeXMLMatePlugIn;
+			productReference = 8D5B49B6048680CD000E48DA /* XMLMate.tmplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "XMLMatePlugIn" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* TeXMLMatePlugIn */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D5B49AC048680CD000E48DA /* XMLMatePlugIn */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */,
+				D3E5EE5C0B3EE5FD00C29ACF /* results.html in Resources */,
+				D3EE3AF10B436DE10064C73A /* sch-custom.xsl in Resources */,
+				D3EE3AF20B436DE10064C73A /* skeleton-1.5.xsl in Resources */,
+				D3CEBCF80B48B9CF00771CFB /* emptyCatalog.xml in Resources */,
+				D32D17190EEE25CA00416861 /* XMLMatePalette.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D3E5E8B10B3D95C500C29ACF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#mkdir -p \"$HOME/Library/Application Support/TextMate/PlugIns\"\n#cp -pR \"${TARGET_BUILD_DIR}/${FULL_PRODUCT_NAME}\" \"$HOME/Library/Application Support/TextMate/PlugIns\"\n#killall TextMate\n#open /Applications/Utilities/Console.app\n#open /Applications/TextMate.app";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3E5E7DF0B3D8A8B00C29ACF /* XMLMatePlugIn.m in Sources */,
+				D3E5E87C0B3D935D00C29ACF /* XMLMateController.m in Sources */,
+				D3E5E8D60B3D984400C29ACF /* BorderView.m in Sources */,
+				D3E5E9760B3D9FF300C29ACF /* XMLParseCommand.m in Sources */,
+				D3E5E9C00B3DB38200C29ACF /* XMLParsingServiceLibxmlImpl.m in Sources */,
+				D3E5E9DB0B3DB5B100C29ACF /* XMLParsingStrategy.m in Sources */,
+				D3E5E9F00B3DE17C00C29ACF /* XMLParsingUserSelectedDTDStrategy.m in Sources */,
+				D3E5EA6A0B3DE39F00C29ACF /* NSString+libxml2Support.m in Sources */,
+				D3E5EBB80B3E17BB00C29ACF /* XMLParsingNoneStrategy.m in Sources */,
+				D3EE2E240B3F33A20064C73A /* XMLParsingAutoDTDStrategy.m in Sources */,
+				D3EE2FB40B3F520C0064C73A /* XMLParsingXSDStrategy.m in Sources */,
+				D3EE2FED0B3F56A30064C73A /* XMLParsingRNGStrategy.m in Sources */,
+				D3EE2FF40B3F56D50064C73A /* XMLParsingRNCStrategy.m in Sources */,
+				D3EE2FF70B3F56E60064C73A /* XMLParsingSchematronStrategy.m in Sources */,
+				D3EE3AC70B436D190064C73A /* AGRegex.m in Sources */,
+				D3EE3AD50B436D2D0064C73A /* chartables.c in Sources */,
+				D3EE3AD70B436D2D0064C73A /* get.c in Sources */,
+				D3EE3AD90B436D2D0064C73A /* maketables.c in Sources */,
+				D3EE3ADA0B436D2D0064C73A /* pcre.c in Sources */,
+				D3EE3ADC0B436D2D0064C73A /* study.c in Sources */,
+				D3CEB77D0B48043E00771CFB /* XMLCatalogServiceLibxmlImpl.m in Sources */,
+				D3CEB7F40B4809D700771CFB /* CatalogItem.m in Sources */,
+				D35B38A40B4CA89300100F04 /* XPathServiceLibxmlImpl.m in Sources */,
+				D35B39770B4CC39400100F04 /* XPathObjWrapper.m in Sources */,
+				D327E8F60BA9B64C00A80E45 /* NSXMLDocument+SyntaxHightlite.m in Sources */,
+				D31479FF0BD985BD00DDC923 /* XPathResultTextView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D32D17170EEE25CA00416861 /* XMLMatePalette.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D32D17180EEE25CA00416861 /* English */,
+			);
+			name = XMLMatePalette.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB913B08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = XMLMatePlugIn_Prefix.pch;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(LIBXML_PREFIX)",
+					"$(LIBXSLT_PREFIX)",
+					"$(LIBEXSLT_PREFIX)",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Application Support/TextMate/PlugIns";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = XMLMate;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
+				WRAPPER_EXTENSION = tmplugin;
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+		1DEB913C08733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = XMLMatePlugIn_Prefix.pch;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(LIBXML_PREFIX)",
+					"$(LIBXSLT_PREFIX)",
+					"$(LIBEXSLT_PREFIX)",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Application Support/TextMate/PlugIns";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = XMLMate;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				WRAPPER_EXTENSION = tmplugin;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		1DEB913F08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Debug;
+		};
+		1DEB914008733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "XMLMatePlugIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913B08733D840010E9CD /* Debug */,
+				1DEB913C08733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "XMLMatePlugIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913F08733D840010E9CD /* Debug */,
+				1DEB914008733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}

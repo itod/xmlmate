@@ -1,0 +1,56 @@
+{
+    IBClasses = (
+        {CLASS = BorderView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {
+            ACTIONS = {
+                handleTableClicked = id; 
+                handleTextChanged = id; 
+                insertParam = id; 
+                removeParam = id; 
+            }; 
+            CLASS = CatalogController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                mainController = TeXMLMateController; 
+                paramsTable = NSTableView; 
+                service = id; 
+                typePopupMenu = NSMenu; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = CatalogItem; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                browse = id; 
+                clear = id; 
+                executeQuery = id; 
+                parameterWasChanged = id; 
+                parse = id; 
+                validationTypeWasChanged = id; 
+            }; 
+            CLASS = TeXMLMateController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                bottomView = NSView; 
+                browseButton = NSButton; 
+                catalogItemTypeMenu = NSMenu; 
+                catalogService = id; 
+                catalogTable = NSTableView; 
+                catalogXMLTextView = NSTextView; 
+                parseResultsWebView = WebView; 
+                parsingService = id; 
+                schemaURLComboBox = NSComboBox; 
+                sourceXMLTextView = NSTextView; 
+                tabView = NSTabView; 
+                xpathArrayTextView = NSTextView; 
+                xpathComboBox = NSComboBox; 
+                xpathService = id; 
+                xpathTreeTextView = NSTextView; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = XPathResultTextView; LANGUAGE = ObjC; SUPERCLASS = NSTextView; }
+    ); 
+    IBVersion = 1; 
+}

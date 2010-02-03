@@ -1,0 +1,169 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>XMLMate Results Document</title>
+	<script type="text/javascript">
+
+	function errorItemClicked(line, filename) {
+		PlugIn.errorItemClicked(line, filename);
+	}
+
+	var noticeDiv;
+	var intervalId;
+	var startTime;
+	var endTime;
+	var duration = 1100;
+	
+	function showResultNotice(success) {
+		noticeDiv = document.createElement("div");
+		noticeDiv.className = (success) ? "success-notice" : "error-notice";
+		noticeDiv.style.opacity = "1.0";
+		document.body.appendChild(noticeDiv);
+		setTimeout("startFade()", 100);
+	}
+	
+	function startFade() {
+		startTime = new Date().getTime();
+		endTime = startTime + duration;
+		intervalId = setInterval("fadeHandler();", 10);
+	}
+		
+	function fadeHandler() {
+		var currTime = new Date().getTime();
+		if (currTime > endTime) {
+			clearTimeout(intervalId);
+			document.body.removeChild(noticeDiv);
+		} else {
+			var len = currTime - startTime;
+			var ratio = len/duration;
+			noticeDiv.style.opacity = "" + (1.0-ratio);
+		}
+	}
+	
+</script>
+<style type="text/css">
+
+	body {
+		display:block;
+		width:100%;
+		margin:0;
+		padding:0;
+	}
+	
+	.success-notice,
+	.error-notice {	
+		position:absolute;
+		left:0; top:0; right:0; bottom:0;
+		width:100%;
+		height:100%;
+	}
+	
+	.success-notice {
+		background:transparent url(images/success-icon-128.png) 50% 50% no-repeat;
+	}
+	
+	.error-notice {
+		background:transparent url(images/error-icon-128.png) center center no-repeat;
+	}
+	
+	#result-list {
+		display:block;
+		min-width:100%;
+		margin:0;
+		padding:0;
+	}
+	
+	li {
+		margin:0;
+		padding:6px 5px 3px 35px;
+		border-bottom:1px solid #ccc;
+		font:10px LucidaGrande,sans-serif;
+		word-wrap:break-word;
+		min-height:15px;
+	}
+	
+	li:hover {
+		background-color:#f6f6f6 !important
+	}
+	
+	li strong {
+		font-weight:bold;
+		text-transform:uppercase;
+	}
+
+	li pre {
+		display:inline;
+		text-decoration:none;
+		font:9px Monaco;
+		color:rgb(166, 84, 0);
+		//word-wrap:normal;
+		clear:both;
+	}
+	
+	li pre.filename {
+		color:black;
+	}
+	
+	tt {
+		font:9px Monaco;
+	}
+	
+	li pre.lexical-qname {
+		font-weight:bold;
+	}
+	
+	li pre.text {
+		color:rgb(35, 110, 37);
+	}
+	
+	.info-item {
+		background:white url(images/info-icon-small.png) 10px 50% no-repeat;
+	}
+	
+	.report-item {
+		background:rgb(242, 245, 255) url(images/info-icon-small.png) 10px 50% no-repeat;
+	}
+	
+	.element-item {
+		background:white url(images/element-icon.png) 10px 50% no-repeat;
+	}
+	
+	.attribute-item {
+		background:white url(images/attribute-icon.png) 10px 50% no-repeat;
+	}
+	
+	.comment-item {
+		background:white url(images/comment-icon.png) 10px 50% no-repeat;
+	}
+	
+	.pi-item {
+		background:white url(images/pi-icon.png) 10px 50% no-repeat;
+	}
+	
+	.entity-item {
+		background:white url(images/entity-icon.png) 10px 50% no-repeat;
+	}
+
+	.ns-item {
+		background:white url(images/ns-icon.png) 10px 50% no-repeat;
+	}
+		
+	.error-item, .assert-item {
+		cursor:pointer;
+		background:#fbe7e7 url(images/error-icon-small.png) 10px 50% no-repeat;
+	}
+	
+	.warning-item {
+		cursor:pointer;
+		background:#FAFDCA url(images/warning-icon-small.png) 10px 50% no-repeat;
+	}
+	
+	.success-item {
+		background:#e2fdda url(images/success-icon-small.png) 10px 50% no-repeat;
+	}
+
+</style>
+</head>
+<body>
+<ul id="result-list"></ul>
+</body>
+</html>
