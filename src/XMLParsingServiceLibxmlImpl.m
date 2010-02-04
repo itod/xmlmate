@@ -646,7 +646,7 @@ void myGenericErrorHandler(id self, const char *msg, ...) {
 	NSString *format = [NSString stringWithUTF8String:msg];
 	NSMutableString *str = [[[NSMutableString alloc] initWithFormat:format arguments:vargs] autorelease];
 	
-	NSLog(str);
+	NSLog(@"%@", str);
 	
 	va_end(vargs);
 }

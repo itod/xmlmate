@@ -112,51 +112,6 @@
 		D3E5E9DA0B3DB5B100C29ACF /* XMLParsingStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLParsingStrategy.m; path = src/XMLParsingStrategy.m; sourceTree = "<group>"; };
 		D3E5E9EE0B3DE17C00C29ACF /* XMLParsingUserSelectedDTDStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLParsingUserSelectedDTDStrategy.h; path = src/XMLParsingUserSelectedDTDStrategy.h; sourceTree = "<group>"; };
 		D3E5E9EF0B3DE17C00C29ACF /* XMLParsingUserSelectedDTDStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XMLParsingUserSelectedDTDStrategy.m; path = src/XMLParsingUserSelectedDTDStrategy.m; sourceTree = "<group>"; };
-		D3E5EA350B3DE2AE00C29ACF /* c14n.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = c14n.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/c14n.h; sourceTree = "<absolute>"; };
-		D3E5EA360B3DE2AE00C29ACF /* catalog.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = catalog.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/catalog.h; sourceTree = "<absolute>"; };
-		D3E5EA370B3DE2AE00C29ACF /* chvalid.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = chvalid.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/chvalid.h; sourceTree = "<absolute>"; };
-		D3E5EA380B3DE2AE00C29ACF /* debugXML.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = debugXML.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/debugXML.h; sourceTree = "<absolute>"; };
-		D3E5EA390B3DE2AE00C29ACF /* dict.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = dict.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/dict.h; sourceTree = "<absolute>"; };
-		D3E5EA3A0B3DE2AE00C29ACF /* DOCBparser.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = DOCBparser.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/DOCBparser.h; sourceTree = "<absolute>"; };
-		D3E5EA3B0B3DE2AE00C29ACF /* encoding.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = encoding.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/encoding.h; sourceTree = "<absolute>"; };
-		D3E5EA3C0B3DE2AE00C29ACF /* entities.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = entities.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/entities.h; sourceTree = "<absolute>"; };
-		D3E5EA3D0B3DE2AE00C29ACF /* globals.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = globals.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/globals.h; sourceTree = "<absolute>"; };
-		D3E5EA3E0B3DE2AE00C29ACF /* hash.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = hash.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/hash.h; sourceTree = "<absolute>"; };
-		D3E5EA3F0B3DE2AE00C29ACF /* HTMLparser.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = HTMLparser.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/HTMLparser.h; sourceTree = "<absolute>"; };
-		D3E5EA400B3DE2AE00C29ACF /* HTMLtree.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = HTMLtree.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/HTMLtree.h; sourceTree = "<absolute>"; };
-		D3E5EA410B3DE2AE00C29ACF /* list.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = list.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/list.h; sourceTree = "<absolute>"; };
-		D3E5EA420B3DE2AE00C29ACF /* nanoftp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = nanoftp.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/nanoftp.h; sourceTree = "<absolute>"; };
-		D3E5EA430B3DE2AE00C29ACF /* nanohttp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = nanohttp.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/nanohttp.h; sourceTree = "<absolute>"; };
-		D3E5EA440B3DE2AE00C29ACF /* parser.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = parser.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/parser.h; sourceTree = "<absolute>"; };
-		D3E5EA450B3DE2AE00C29ACF /* parserInternals.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = parserInternals.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/parserInternals.h; sourceTree = "<absolute>"; };
-		D3E5EA460B3DE2AE00C29ACF /* pattern.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = pattern.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/pattern.h; sourceTree = "<absolute>"; };
-		D3E5EA470B3DE2AE00C29ACF /* relaxng.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = relaxng.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/relaxng.h; sourceTree = "<absolute>"; };
-		D3E5EA480B3DE2AE00C29ACF /* SAX.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SAX.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/SAX.h; sourceTree = "<absolute>"; };
-		D3E5EA490B3DE2AE00C29ACF /* SAX2.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = SAX2.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/SAX2.h; sourceTree = "<absolute>"; };
-		D3E5EA4A0B3DE2AE00C29ACF /* schemasInternals.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = schemasInternals.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/schemasInternals.h; sourceTree = "<absolute>"; };
-		D3E5EA4B0B3DE2AE00C29ACF /* threads.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = threads.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/threads.h; sourceTree = "<absolute>"; };
-		D3E5EA4C0B3DE2AE00C29ACF /* tree.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = tree.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/tree.h; sourceTree = "<absolute>"; };
-		D3E5EA4D0B3DE2AE00C29ACF /* uri.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = uri.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/uri.h; sourceTree = "<absolute>"; };
-		D3E5EA4E0B3DE2AE00C29ACF /* valid.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = valid.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/valid.h; sourceTree = "<absolute>"; };
-		D3E5EA4F0B3DE2AE00C29ACF /* xinclude.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xinclude.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xinclude.h; sourceTree = "<absolute>"; };
-		D3E5EA500B3DE2AE00C29ACF /* xlink.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xlink.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xlink.h; sourceTree = "<absolute>"; };
-		D3E5EA510B3DE2AE00C29ACF /* xmlautomata.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlautomata.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlautomata.h; sourceTree = "<absolute>"; };
-		D3E5EA520B3DE2AE00C29ACF /* xmlerror.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlerror.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlerror.h; sourceTree = "<absolute>"; };
-		D3E5EA530B3DE2AE00C29ACF /* xmlexports.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlexports.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlexports.h; sourceTree = "<absolute>"; };
-		D3E5EA540B3DE2AE00C29ACF /* xmlIO.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlIO.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlIO.h; sourceTree = "<absolute>"; };
-		D3E5EA550B3DE2AE00C29ACF /* xmlmemory.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlmemory.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlmemory.h; sourceTree = "<absolute>"; };
-		D3E5EA560B3DE2AE00C29ACF /* xmlreader.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlreader.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlreader.h; sourceTree = "<absolute>"; };
-		D3E5EA570B3DE2AE00C29ACF /* xmlregexp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlregexp.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlregexp.h; sourceTree = "<absolute>"; };
-		D3E5EA580B3DE2AE00C29ACF /* xmlsave.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlsave.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlsave.h; sourceTree = "<absolute>"; };
-		D3E5EA590B3DE2AE00C29ACF /* xmlschemas.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlschemas.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlschemas.h; sourceTree = "<absolute>"; };
-		D3E5EA5A0B3DE2AE00C29ACF /* xmlschemastypes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlschemastypes.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlschemastypes.h; sourceTree = "<absolute>"; };
-		D3E5EA5B0B3DE2AE00C29ACF /* xmlstring.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlstring.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlstring.h; sourceTree = "<absolute>"; };
-		D3E5EA5C0B3DE2AE00C29ACF /* xmlunicode.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlunicode.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlunicode.h; sourceTree = "<absolute>"; };
-		D3E5EA5D0B3DE2AE00C29ACF /* xmlversion.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlversion.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlversion.h; sourceTree = "<absolute>"; };
-		D3E5EA5E0B3DE2AE00C29ACF /* xmlwriter.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xmlwriter.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xmlwriter.h; sourceTree = "<absolute>"; };
-		D3E5EA5F0B3DE2AE00C29ACF /* xpath.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xpath.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xpath.h; sourceTree = "<absolute>"; };
-		D3E5EA600B3DE2AE00C29ACF /* xpathInternals.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xpathInternals.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xpathInternals.h; sourceTree = "<absolute>"; };
-		D3E5EA610B3DE2AE00C29ACF /* xpointer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xpointer.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml/xpointer.h; sourceTree = "<absolute>"; };
 		D3E5EA680B3DE39F00C29ACF /* NSString+libxml2Support.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+libxml2Support.h"; path = "src/NSString+libxml2Support.h"; sourceTree = "<group>"; };
 		D3E5EA690B3DE39F00C29ACF /* NSString+libxml2Support.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+libxml2Support.m"; path = "src/NSString+libxml2Support.m"; sourceTree = "<group>"; };
 		D3E5EBB60B3E17BB00C29ACF /* XMLParsingNoneStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XMLParsingNoneStrategy.h; path = src/XMLParsingNoneStrategy.h; sourceTree = "<group>"; };
@@ -212,26 +167,6 @@
 		D3EE3AF00B436DE10064C73A /* skeleton-1.5.xsl */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; name = "skeleton-1.5.xsl"; path = "res/skeleton-1.5.xsl"; sourceTree = "<group>"; };
 		D3EE3B4B0B4370F00064C73A /* libexslt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libexslt.dylib; path = /usr/lib/libexslt.dylib; sourceTree = "<absolute>"; };
 		D3EE3B4C0B4370F00064C73A /* libxslt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxslt.dylib; path = /usr/lib/libxslt.dylib; sourceTree = "<absolute>"; };
-		D3EE3BAD0B437C0F0064C73A /* attributes.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = attributes.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/attributes.h; sourceTree = "<absolute>"; };
-		D3EE3BAE0B437C0F0064C73A /* documents.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = documents.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/documents.h; sourceTree = "<absolute>"; };
-		D3EE3BAF0B437C0F0064C73A /* extensions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = extensions.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/extensions.h; sourceTree = "<absolute>"; };
-		D3EE3BB00B437C0F0064C73A /* extra.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = extra.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/extra.h; sourceTree = "<absolute>"; };
-		D3EE3BB10B437C0F0064C73A /* functions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = functions.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/functions.h; sourceTree = "<absolute>"; };
-		D3EE3BB20B437C0F0064C73A /* imports.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = imports.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/imports.h; sourceTree = "<absolute>"; };
-		D3EE3BB30B437C0F0064C73A /* keys.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = keys.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/keys.h; sourceTree = "<absolute>"; };
-		D3EE3BB40B437C0F0064C73A /* namespaces.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = namespaces.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/namespaces.h; sourceTree = "<absolute>"; };
-		D3EE3BB50B437C0F0064C73A /* numbersInternals.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = numbersInternals.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/numbersInternals.h; sourceTree = "<absolute>"; };
-		D3EE3BB60B437C0F0064C73A /* pattern.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = pattern.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/pattern.h; sourceTree = "<absolute>"; };
-		D3EE3BB70B437C0F0064C73A /* preproc.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = preproc.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/preproc.h; sourceTree = "<absolute>"; };
-		D3EE3BB80B437C0F0064C73A /* security.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = security.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/security.h; sourceTree = "<absolute>"; };
-		D3EE3BB90B437C0F0064C73A /* templates.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = templates.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/templates.h; sourceTree = "<absolute>"; };
-		D3EE3BBA0B437C0F0064C73A /* transform.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = transform.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/transform.h; sourceTree = "<absolute>"; };
-		D3EE3BBB0B437C0F0064C73A /* variables.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = variables.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/variables.h; sourceTree = "<absolute>"; };
-		D3EE3BBC0B437C0F0064C73A /* xslt.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xslt.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/xslt.h; sourceTree = "<absolute>"; };
-		D3EE3BBD0B437C0F0064C73A /* xsltconfig.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xsltconfig.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/xsltconfig.h; sourceTree = "<absolute>"; };
-		D3EE3BBE0B437C0F0064C73A /* xsltexports.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xsltexports.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/xsltexports.h; sourceTree = "<absolute>"; };
-		D3EE3BBF0B437C0F0064C73A /* xsltInternals.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xsltInternals.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/xsltInternals.h; sourceTree = "<absolute>"; };
-		D3EE3BC00B437C0F0064C73A /* xsltutils.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = xsltutils.h; path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt/xsltutils.h; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -335,8 +270,6 @@
 			isa = PBXGroup;
 			children = (
 				D3EE3ACC0B436D2D0064C73A /* pcre-4.3 */,
-				D3E5EA340B3DE2AE00C29ACF /* libxml */,
-				D3EE3BAC0B437C0F0064C73A /* libxslt */,
 				32DBCF630370AF2F00C91783 /* XMLMatePlugIn_Prefix.pch */,
 			);
 			name = "Other Sources";
@@ -405,59 +338,6 @@
 			);
 			name = XMLParsing;
 			sourceTree = "<group>";
-		};
-		D3E5EA340B3DE2AE00C29ACF /* libxml */ = {
-			isa = PBXGroup;
-			children = (
-				D3E5EA350B3DE2AE00C29ACF /* c14n.h */,
-				D3E5EA360B3DE2AE00C29ACF /* catalog.h */,
-				D3E5EA370B3DE2AE00C29ACF /* chvalid.h */,
-				D3E5EA380B3DE2AE00C29ACF /* debugXML.h */,
-				D3E5EA390B3DE2AE00C29ACF /* dict.h */,
-				D3E5EA3A0B3DE2AE00C29ACF /* DOCBparser.h */,
-				D3E5EA3B0B3DE2AE00C29ACF /* encoding.h */,
-				D3E5EA3C0B3DE2AE00C29ACF /* entities.h */,
-				D3E5EA3D0B3DE2AE00C29ACF /* globals.h */,
-				D3E5EA3E0B3DE2AE00C29ACF /* hash.h */,
-				D3E5EA3F0B3DE2AE00C29ACF /* HTMLparser.h */,
-				D3E5EA400B3DE2AE00C29ACF /* HTMLtree.h */,
-				D3E5EA410B3DE2AE00C29ACF /* list.h */,
-				D3E5EA420B3DE2AE00C29ACF /* nanoftp.h */,
-				D3E5EA430B3DE2AE00C29ACF /* nanohttp.h */,
-				D3E5EA440B3DE2AE00C29ACF /* parser.h */,
-				D3E5EA450B3DE2AE00C29ACF /* parserInternals.h */,
-				D3E5EA460B3DE2AE00C29ACF /* pattern.h */,
-				D3E5EA470B3DE2AE00C29ACF /* relaxng.h */,
-				D3E5EA480B3DE2AE00C29ACF /* SAX.h */,
-				D3E5EA490B3DE2AE00C29ACF /* SAX2.h */,
-				D3E5EA4A0B3DE2AE00C29ACF /* schemasInternals.h */,
-				D3E5EA4B0B3DE2AE00C29ACF /* threads.h */,
-				D3E5EA4C0B3DE2AE00C29ACF /* tree.h */,
-				D3E5EA4D0B3DE2AE00C29ACF /* uri.h */,
-				D3E5EA4E0B3DE2AE00C29ACF /* valid.h */,
-				D3E5EA4F0B3DE2AE00C29ACF /* xinclude.h */,
-				D3E5EA500B3DE2AE00C29ACF /* xlink.h */,
-				D3E5EA510B3DE2AE00C29ACF /* xmlautomata.h */,
-				D3E5EA520B3DE2AE00C29ACF /* xmlerror.h */,
-				D3E5EA530B3DE2AE00C29ACF /* xmlexports.h */,
-				D3E5EA540B3DE2AE00C29ACF /* xmlIO.h */,
-				D3E5EA550B3DE2AE00C29ACF /* xmlmemory.h */,
-				D3E5EA560B3DE2AE00C29ACF /* xmlreader.h */,
-				D3E5EA570B3DE2AE00C29ACF /* xmlregexp.h */,
-				D3E5EA580B3DE2AE00C29ACF /* xmlsave.h */,
-				D3E5EA590B3DE2AE00C29ACF /* xmlschemas.h */,
-				D3E5EA5A0B3DE2AE00C29ACF /* xmlschemastypes.h */,
-				D3E5EA5B0B3DE2AE00C29ACF /* xmlstring.h */,
-				D3E5EA5C0B3DE2AE00C29ACF /* xmlunicode.h */,
-				D3E5EA5D0B3DE2AE00C29ACF /* xmlversion.h */,
-				D3E5EA5E0B3DE2AE00C29ACF /* xmlwriter.h */,
-				D3E5EA5F0B3DE2AE00C29ACF /* xpath.h */,
-				D3E5EA600B3DE2AE00C29ACF /* xpathInternals.h */,
-				D3E5EA610B3DE2AE00C29ACF /* xpointer.h */,
-			);
-			name = libxml;
-			path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxml2/libxml;
-			sourceTree = "<absolute>";
 		};
 		D3E5F1D20B3F062F00C29ACF /* Images */ = {
 			isa = PBXGroup;
@@ -542,34 +422,6 @@
 			path = "src/pcre-4.3";
 			sourceTree = "<group>";
 		};
-		D3EE3BAC0B437C0F0064C73A /* libxslt */ = {
-			isa = PBXGroup;
-			children = (
-				D3EE3BAD0B437C0F0064C73A /* attributes.h */,
-				D3EE3BAE0B437C0F0064C73A /* documents.h */,
-				D3EE3BAF0B437C0F0064C73A /* extensions.h */,
-				D3EE3BB00B437C0F0064C73A /* extra.h */,
-				D3EE3BB10B437C0F0064C73A /* functions.h */,
-				D3EE3BB20B437C0F0064C73A /* imports.h */,
-				D3EE3BB30B437C0F0064C73A /* keys.h */,
-				D3EE3BB40B437C0F0064C73A /* namespaces.h */,
-				D3EE3BB50B437C0F0064C73A /* numbersInternals.h */,
-				D3EE3BB60B437C0F0064C73A /* pattern.h */,
-				D3EE3BB70B437C0F0064C73A /* preproc.h */,
-				D3EE3BB80B437C0F0064C73A /* security.h */,
-				D3EE3BB90B437C0F0064C73A /* templates.h */,
-				D3EE3BBA0B437C0F0064C73A /* transform.h */,
-				D3EE3BBB0B437C0F0064C73A /* variables.h */,
-				D3EE3BBC0B437C0F0064C73A /* xslt.h */,
-				D3EE3BBD0B437C0F0064C73A /* xsltconfig.h */,
-				D3EE3BBE0B437C0F0064C73A /* xsltexports.h */,
-				D3EE3BBF0B437C0F0064C73A /* xsltInternals.h */,
-				D3EE3BC00B437C0F0064C73A /* xsltutils.h */,
-			);
-			name = libxslt;
-			path = /Developer/SDKs/MacOSX10.4u.sdk/usr/include/libxslt;
-			sourceTree = "<absolute>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -577,9 +429,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "XMLMatePlugIn" */;
 			buildPhases = (
+				8D5B49B1048680CD000E48DA /* Sources */,
 				8D5B49AF048680CD000E48DA /* Resources */,
 				D3EE31810B3F7C720064C73A /* Copy Images */,
-				8D5B49B1048680CD000E48DA /* Sources */,
 				8D5B49B3048680CD000E48DA /* Frameworks */,
 				D3E5E8B10B3D95C500C29ACF /* ShellScript */,
 			);
@@ -701,6 +553,7 @@
 		1DEB913B08733D840010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ONLY_ACTIVE_ARCH_PRE_XCODE_3_1)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -718,13 +571,13 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
 				HEADER_SEARCH_PATHS = (
-					"$(LIBXML_PREFIX)",
-					"$(LIBXSLT_PREFIX)",
-					"$(LIBEXSLT_PREFIX)",
+					/usr/include/libxml2/,
+					/usr/include/,
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Application Support/TextMate/PlugIns";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH_PRE_XCODE_3_1 = "$(NATIVE_ARCH)";
 				PRODUCT_NAME = XMLMate;
 				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
 				WRAPPER_EXTENSION = tmplugin;
@@ -735,10 +588,8 @@
 		1DEB913C08733D840010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
+				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -749,15 +600,14 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				HEADER_SEARCH_PATHS = (
-					"$(LIBXML_PREFIX)",
-					"$(LIBXSLT_PREFIX)",
-					"$(LIBEXSLT_PREFIX)",
+					/usr/include/libxml2/,
+					/usr/include/,
 				);
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Application Support/TextMate/PlugIns";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = XMLMate;
-				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				SDKROOT = /Developer/SDKs/MacOSX10.5.sdk;
 				WRAPPER_EXTENSION = tmplugin;
 				ZERO_LINK = NO;
 			};
