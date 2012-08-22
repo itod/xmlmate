@@ -989,15 +989,15 @@ typedef enum {
 }
 
 
-- (unsigned)webView:(WebView *)sender dragDestinationActionMaskForDraggingInfo:(id <NSDraggingInfo>)draggingInfo {
+- (NSUInteger)webView:(WebView *)sender dragDestinationActionMaskForDraggingInfo:(id <NSDraggingInfo>)draggingInfo {
 	return WebDragDestinationActionLoad;
 }
 
 
 - (void)webView:(WebView *)sender willPerformDragDestinationAction:(WebDragDestinationAction)action forDraggingInfo:(id <NSDraggingInfo>)draggingInfo {
 	NSPasteboard *pboard = [draggingInfo draggingPasteboard];
-	int index = [[pboard types] indexOfObject:NSFilenamesPboardType];
-	if (NSNotFound != index) {
+	NSUInteger idx = [[pboard types] indexOfObject:NSFilenamesPboardType];
+	if (NSNotFound != idx) {
 		NSString *filename = [[pboard propertyListForType:NSFilenamesPboardType] objectAtIndex:0];
 		[command setSchemaURLString:filename];
 		[self clear:self];
@@ -1048,7 +1048,7 @@ typedef enum {
 }
 
 
-- (unsigned int)comboBox:(NSComboBox *)aComboBox indexOfItemWithStringValue:(NSString *)aString {
+- (NSUInteger)comboBox:(NSComboBox *)aComboBox indexOfItemWithStringValue:(NSString *)aString {
 	NSEnumerator *e = [recentSchemaURLStrings objectEnumerator];
 	NSString *str = nil;
 	int i = 0;
@@ -1115,11 +1115,12 @@ typedef enum {
 
 
 - (void)menuDidSendAction:(NSNotification *)aNotification {	
-	id menu = [aNotification object];
-	if ([[[menu itemAtIndex:0] title] isEqualToString:@"Disabled"] 
-		&& [[[menu itemAtIndex:1] title] isEqualToString:@"Public"]) {
-		[self updateCatalog];
-	}
+	NSMenu *menu = [aNotification object];
+    if ([menu numberOfItems] > 1) {
+        if ([[[menu itemAtIndex:0] title] isEqualToString:@"Disabled"] && [[[menu itemAtIndex:1] title] isEqualToString:@"Public"]) {
+            [self updateCatalog];
+        }
+    }
 }
 
 

@@ -39,8 +39,7 @@ static NSString * const PrefsFileExt				= @"plist";
 
 + (void)initialize {
 	//NSLog(@"registering defaults");
-	NSDictionary *values = [NSDictionary dictionaryWithObject:[NSNumber numberWithBool:YES]
-													   forKey:kFLoatingPanelKey];
+	NSDictionary *values = [NSDictionary dictionaryWithObject:[NSNumber numberWithBool:YES] forKey:kFLoatingPanelKey];
 	
 	[[NSUserDefaults standardUserDefaults] registerDefaults:values];
 }
@@ -75,15 +74,15 @@ static NSString * const PrefsFileExt				= @"plist";
 	id windowMenu = [[[NSApp mainMenu] itemWithTitle:title] submenu];
 	
 	if (windowMenu) {
-		int index = 0;
+		NSInteger idx = 0;
 		NSArray *items = [windowMenu itemArray];
-		for (int separators = 0; index != [items count] && separators != 2; index++)
-			separators += [[items objectAtIndex:index] isSeparatorItem] ? 1 : 0;
+		for (NSInteger separators = 0; idx != [items count] && separators != 2; idx++)
+			separators += [[items objectAtIndex:idx] isSeparatorItem] ? 1 : 0;
         
         NSString *title = NSLocalizedString(@"Show XMLMate Palette", @"");
 		NSMenuItem *menuItem = [[NSMenuItem alloc] initWithTitle:title action:@selector(showPalette:) keyEquivalent:@""];
 		[menuItem setTarget:self];
-		[windowMenu insertItem:menuItem atIndex:index ? index-1 : 0];
+		[windowMenu insertItem:menuItem atIndex:idx ? idx-1 : 0];
         [menuItem release];
 	}
 }
@@ -121,20 +120,16 @@ static NSString * const PrefsFileExt				= @"plist";
 
 - (void)determineFloatingPanelStatus {
 	BOOL floatingPanel = [[NSUserDefaults standardUserDefaults] boolForKey:kFLoatingPanelKey];
-	//NSLog(@"floatingPanel: %d", floatingPanel);
 	[(NSPanel *)[controller window] setFloatingPanel:floatingPanel];
 	//[(NSPanel *)[self window] setHidesOnDeactivate:!floatingPanel];
 }
 
 
 - (void)loadPlugInPrefs {
-	//NSLog(@"loadPlugInPrefs");
 	NSBundle *bundle = [XMLMatePlugIn bundle];
 	NSString *path	 = [bundle pathForResource:PrefsFileName ofType:PrefsFileExt];
 	
 	NSDictionary *d = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
-	
-	//NSLog(@"d: %@", d);
 	
 	//int preferedCatalogItemType			   = [[d objectForKey:PreferedCatalogItemTypeKey] intValue];
 	NSMutableArray *catalogItems		   = [NSMutableArray arrayWithArray:[d objectForKey:CatalogItemsKey]];
@@ -161,13 +156,9 @@ static NSString * const PrefsFileExt				= @"plist";
 
 
 - (void)savePlugInPrefs {
-	//NSLog(@"savePlugInPrefs");
-	
 	NSString *path = [[XMLMatePlugIn bundle] resourcePath];
 	path = [[path stringByAppendingPathComponent:PrefsFileName] stringByAppendingPathExtension:PrefsFileExt];
-	
-	//NSLog(@"path: %@", path);
-	
+		
 	NSNumber *preferedCatalogItemType	= [NSNumber numberWithInt:[controller preferedCatalogItemType]];
 	NSMutableArray *catalogItems		= [controller catalogItems];
 	NSString *windowFrameString			= [[controller window] stringWithSavedFrame];
@@ -187,8 +178,6 @@ static NSString * const PrefsFileExt				= @"plist";
 		recentSchemaURLStrings, RecentSchemaURLStrings,
 		recentXPathStrings, RecentXPathStrings,
 		nil];
-
-	//NSLog(@"d: %@", d);
 	
 	[NSKeyedArchiver archiveRootObject:d toFile:path];
 }

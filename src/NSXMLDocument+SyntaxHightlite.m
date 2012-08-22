@@ -112,7 +112,7 @@ static NSColor *attributeValueColor() {
 	//NSString *XMLString = [self XMLStringWithOptions:NSXMLNodePreserveAll];
 	NSString *XMLString = [self description];
 	NSRange r = [XMLString rangeOfString:@"<" options:NSBackwardsSearch];
-	int i = r.location;
+	NSUInteger i = r.location;
 	if (NSNotFound == i) {
 		return nil;
 	}

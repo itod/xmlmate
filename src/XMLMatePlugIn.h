@@ -17,6 +17,7 @@
 @interface XMLMatePlugIn : NSObject {
 	XMLMateController *controller;
 }
+
 + (NSBundle *)bundle;
 
 - (id)initWithPlugInController:(id <TMPlugInController>)aController;

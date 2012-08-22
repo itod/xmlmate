@@ -31,14 +31,14 @@
 	id <XMLCatalogService> catalogService;
 	NSMutableArray *catalogItems;
 	NSString *catalogXMLString;
-	int preferedCatalogItemType;
+	NSInteger preferedCatalogItemType;
 	
 	BOOL busy;
 	BOOL showSettings;
 	BOOL playSounds;
 
 	id <XMLParsingService> parsingService;
-	int errorCount;
+	NSInteger errorCount;
 	NSArray *contextMenuItems;
 	XMLParseCommand *command;
 	NSMutableArray *recentSchemaURLStrings;
@@ -49,9 +49,10 @@
 	NSString *XPathString;
 	NSAttributedString *queryResultString;
 	NSMutableString *queryConsoleString;
-	int queryResultLength;
+	NSInteger queryResultLength;
 	NSArray *queryResultNodes;
 }
+
 - (IBAction)parameterWasChanged:(id)sender;
 - (IBAction)validationTypeWasChanged:(id)sender;
 - (IBAction)browse:(id)sender;
